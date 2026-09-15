@@ -104,6 +104,9 @@ console.log(clavesYValores({auto: 'mazda', modelo: 'aventura'}));
 
 
 
+
+
+
 module.exports = {
   numerosHastaN,
   contarConWhile,
