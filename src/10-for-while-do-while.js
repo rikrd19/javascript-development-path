@@ -47,3 +47,19 @@ const objeto = {a: 1, b: 2, c: 3, d: 4};
 for(const obj in objeto){
     console.log(`${obj}: ${objeto[obj]}`);
 }
+
+let contador = 0;
+
+while (contador <3) {
+  console.log(contador);
+  contador++;
+}
+
+// do while
+
+let numero = 0;
+
+do {
+    console.log(`Entra en: ${numero}`)
+    numero++;
+} while (numero < 3);
