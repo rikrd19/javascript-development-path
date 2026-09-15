@@ -4,11 +4,46 @@
 
 // };
 
-for(let i = 0; i < 5; i++){
-    console.log(i)
+for (let i = 0; i < 5; i++) {
+  console.log(i);
 }
 
-const notas = ['Nota 1', 'Nota 2', 'Nota 3'];
-for(let i =0; i < notas.length; i++){
-    console.log(`Indice ${i}: ${notas[i]}`);
+console.log();
+
+const notas = ["Nota 1", "Nota 2", "Nota 3"];
+for (let i = 0; i < notas.length; i++) {
+  console.log(`Indice ${i}: ${notas[i]}`);
+}
+
+console.log("**** usando 'const' en bucles 'for...of' ****");
+
+const numeros = [1, 2, 4, 5, 6, 7];
+for (const num of numeros) {
+  console.log(num);
+}
+
+console.log();
+
+const frutas = ['manzana', 'pera', 'uva'];
+for(const fruta of frutas){
+    console.log(fruta);
+    if(fruta === 'manzana'){
+        console.log('Es una rica manzana');
+    }
+}
+
+console.log("**** usando 'const' en bucles 'for...in' ****");
+
+const persona = {
+    nombre: 'Ana', edad: 25,
+};
+for(const clave in persona){
+    console.log(`${clave}: ${persona[clave]}`);
+}
+
+console.log();
+
+const objeto = {a: 1, b: 2, c: 3, d: 4};
+for(const obj in objeto){
+    console.log(`${obj}: ${objeto[obj]}`);
 }
