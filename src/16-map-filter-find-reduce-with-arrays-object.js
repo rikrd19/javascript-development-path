@@ -49,7 +49,7 @@ const notas3 = [
 const nota = notas3.find((nota) => nota.id === 2);
 console.log(nota);
 
-
+// reduce()
 console.log("\n------------ reduce() ---------");
 
 const numeros = [1,2,3,4,5];
