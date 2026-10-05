@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Nova - Landing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <strong id="brand">Tienda Nova</strong>
+        </div>
+
+        <nav class="links" aria-label="Navegación">
+          <a href="#productos" class="nav-link">Productos</a>
+          <a href="#opiniones-section" class="nav-link">Opiniones</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" id="inicio">
+        <h1>Productos útiles, entrega rápida.</h1>
+        <p>Tecnología para ti, calidad para ti.</p>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap">
+          <button class="btn" id="btn-comprar">Ver ofertas</button>
+        </div>
+      </section>
+
+      <section id="productos">
+        <h2 class="section-title">Productos destacados</h2>
+
+        <div class="grid" id="grid-productos">
+          <article class="card producto" data-sku="NOVA-001">
+            <h3 class="producto-nombre">Audífonos Nova</h3>
+            <p class="muted producto-desc">
+              Audio nítido para trabajar y estudiar.
+            </p>
+            <p class="price producto-precio">$39.99</p>
+            <button class="btn secondary producto-btn" type="button">
+              Comprar
+            </button>
+          </article>
+
+          <article class="card producto" data-sku="NOVA-002">
+            <h3 class="producto-nombre">Mouse Ergo</h3>
+            <p class="muted producto-desc">Cómodo para largas jornadas.</p>
+            <p class="price producto-precio">$24.90</p>
+            <button class="btn secondary producto-btn" type="button">
+              Comprar
+            </button>
+          </article>
+
+          <article class="card producto" data-sku="NOVA-003">
+            <h3 class="producto-nombre">Teclado Compact</h3>
+            <p class="muted producto-desc">Minimal y eficiente.</p>
+            <p class="price producto-precio">$49.00</p>
+            <button class="btn secondary producto-btn" type="button">
+              Comprar
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section id="opiniones-section">
+        <h2 class="section-title">Opiniones de usuarios</h2>
+        <div id="opiniones"></div>
+      </section>
+
+      <section id="faq">
+        <h2 class="section-title">FAQ</h2>
+        <div class="card">
+          <p><strong>¿Cuánto tarda el envío?</strong></p>
+          <p class="muted">24-48h en ciudades principales.</p>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <form class="card" id="contact-form">
+          <label class="field">
+            <span>Nombre</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+
+          <label class="field">
+            <span>Mensaje</span>
+            <textarea name="message" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+
+        <div
+          class="card hidden"
+          id="mensaje-guardado"
+          style="margin-top: 12px"
+        ></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <small>DOM básico.</small>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
