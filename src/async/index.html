@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platzi Store</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <strong>Platzi Store</strong>
+        </div>
+
+        <nav class="links" aria-label="Navegación">
+          <a href="#productos">Productos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Platzi Store</h1>
+        <p>Productos desde una API usando fetch + async/await.</p>
+      </section>
+
+      <section id="productos">
+        <h2 class="section-title">Productos</h2>
+        <p class="muted" id="status"></p>
+        <div class="grid" id="grid-productos"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <small>Todos los Izquierdos Reservados.</small>
+      </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

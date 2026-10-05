@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos y estado</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <strong>Eventos + Estado</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Captura interacción</h1>
+        <p>
+          Un <code>click</code> cambia el estado de la app y un
+          <code>hover</code> cambia el estado visual de una sección.
+        </p>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap">
+          <button class="btn" id="btn-like" type="button">Me gusta</button>
+          <button class="btn secondary" id="btn-reset" type="button">
+            Reset
+          </button>
+        </div>
+      </section>
+
+      <section class="demo" aria-label="Demo de eventos">
+        <article class="card">
+          <h2 class="section-title" style="margin-top: 0">
+            Estado de la aplicación
+          </h2>
+          <div class="status" id="status" aria-live="polite"></div>
+          <p class="muted" style="margin-bottom: 0">
+            Cada click incrementa el contador y renderiza nuevamente la UI.
+          </p>
+        </article>
+
+        <aside class="card">
+          <h2 class="section-title" style="margin-top: 0">Zona hover</h2>
+          <section id="hover-zone" class="hover-zone" tabindex="0">
+            <span class="pill" id="hover-pill">mouse: fuera</span>
+            <strong id="hover-title">Pasa el mouse aquí</strong>
+            <p id="hover-text" class="muted" style="margin: 0">
+              Cuando entras/sales, cambiamos una clase y el texto.
+            </p>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <!-- <script src="./app.js"></script> -->
+
+    <!-- Para probar el 19-challenge -->
+    <script src="./19-challenge-eventos-dom-click-hover-keydown.js"></script>
+  </body>
+</html>

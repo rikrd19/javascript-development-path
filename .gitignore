@@ -1,6 +1,7 @@
 # Dependencies
 node_modules/
 package-lock.json
+coverage/
 
 # IDE / Editor
 .vscode/
@@ -12,6 +13,8 @@ package-lock.json
 # OS files
 .DS_Store
 Thumbs.db
+
+.kilo
 
 # Logs
 *.log
